@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+@media(min-aspect-ratio: 16/9) {
+
+
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 900px) {
+    .content h1 {
+        font-size: 26px;
+  }
+
+  .content a{
+      font-size: 15px;
+  }
+
+    #myVideo{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hero{
+        border: 20px solid black;
+        border-top: 60px solid black;
+        width: 100%;
+        object-fit:cover;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-position: 48% 28%;
+    }
+
+    .dynamic-txts li{
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins';
+        color: black;
+        list-style: none; /*le quita la viñeta a la lista*/
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .dynamic-txts li span{
+        position:relative;
+      }
+
+      .logo{
+        float:none;
+        display: flex;
+        justify-content: center;
+        margin-left:0;
+        padding: 30;
+      }
+
+      .secciones{
+        max-width: 100%;
+      }
+      
+        .secciones  div {
+          font-weight: 300;
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+        }
+      
+        .secciones div a{
+         color: white;
+        }   
+
+        .about p{
+          text-align: center;
+        }
+
+        .about {
+          float:none;
+          display: flex;
+          justify-content: center;
+          margin-left:0;
+          padding: 30;
+        }
+
+        .about h1{
+          margin-left: 0;
+        }
+
+        .about p {
+
+          font-size: 15px;
+          text-align: justify;
+          text-justify: inter-word;
+          margin-left: 15%;
+          margin-right: 15%;
+
+        }
+
+        #menuwork:hover #dropdown-products {
+          display: table;
+          padding-top: 0;
+          margin-right: 0;
+          width: 100%;
+          background-color: #aa0c00;
+
+
+
+        }
+      
+        #dropdown-products li {
+          
+          display:table-row;
+          text-align:center;
+          
+          
+          
+        }
+  
+
+        #dropdown-products li a{
+          
+          font-size: 9px !important;
+          font-style: italic;
+          text-decoration: underline;
+          background: transparent;
+          
+
+        }
+
+
+        @media(max-width: 991px) {
+          #contact-form {
+                
+                margin: auto;
+                width: 98%;
+          }
+        }
+
+
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    .image img{
+      margin-top: 70px;
+      width: 300px;
+      animation: fade-in 2s;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media(max-width: 1200px) {
+    .collab{
+      text-align: center;
+      
+    }
+
+    #interesting{
+      margin-left: 0;
+    }
+
+    .about p {
+
+      font-size: 15px;
+      text-align: justify;
+      text-justify: inter-word;
+      margin-left: 15%;
+      margin-right: 15%;
+
+    }
+
+    .about p{
+      text-align: center;
+    }
+
+    .about {
+      float:none;
+      display: flex;
+      justify-content: center;
+      margin-left:0;
+      padding: 30;
+    }
+
+    .about h1{
+      margin-left: 0;
+    }
+  }
+
+  @media(max-width: 991px) {
+    #personal, #media, #address {
+          text-align: center;
+    }
+
+    .info ul {
+          margin: 0 0 0 -22px;
+          padding: 0;
+    }
+}
