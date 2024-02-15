@@ -370,6 +370,13 @@ nav #menu {
     }
 }
 /*//////////////////////////////////////////////////////////////////////*/
+.visualarchive{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #999;
+}
+
 .logo{
       float: left;
       margin-left: 50px;

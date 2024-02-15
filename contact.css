@@ -86,4 +86,29 @@ textarea:focus {
           display:none;
     }
 
+    .useform h3{
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .useform p {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .boton{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+      }
+
+      .send{
+        margin-left: 0;
+      }
+
+
 }
