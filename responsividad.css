@@ -210,3 +210,15 @@
           padding: 0;
     }
 }
+
+@media screen and (max-width: 991px){
+  .carousel img{
+    width: calc(100% / 2) !important;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .carousel img{
+    width: 100% !important;
+  }
+}

@@ -48,3 +48,62 @@
     align-content: center;
     color: #999;
   }
+
+
+
+.general{
+  max-width: 1500px;
+  position: relative;
+
+}
+
+.general i{
+  z-index: 1;
+  top: 50%;
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 46px;
+  background: #aa0c00;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.general i:first-child{
+  left: -23px;
+}
+
+.general i:last-child{
+  right: -23px;
+}
+
+  .general .carousel{
+    font-size: 0px;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+
+  .carousel img{
+    margin-left: 10px;
+    height: 600px;
+    object-fit: cover;
+    width: calc(100% / 3);
+  }
+
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
