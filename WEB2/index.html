@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>MHM | Digital Artist</title>
+
+      <!-- stylesheet --> <!--Estilo de la pagina-->
+      
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="stylesheet"  href="responsividad.css">
+
+
+    </head>
+
+    <body>
+            <!--------------- Landing Page --------------->
+
+            <main class="Hero">
+
+            <!--video -->
+            <video id="myVideo" autoplay muted loop>
+                <source src="./videos/camionetacolor.mp4" type="video/mp4">
+            </video>
+
+
+            <div class="content">
+                <div class="fadeIn">
+                <h1 >Manuel H. Mota</h1>
+            </div>
+                <a href="home.html">Digital Artist</a>
+                
+            </div>
+
+
+            </main>
+
+
+
+
+          <!--------------- Landing Page ends here --------------->
+
+          <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyACdf3BIEHzCDOQvYvTz4karRcHvsOtuug",
+              authDomain: "mhdzmotadigitalartist.firebaseapp.com",
+              projectId: "mhdzmotadigitalartist",
+              storageBucket: "mhdzmotadigitalartist.appspot.com",
+              messagingSenderId: "677796160164",
+              appId: "1:677796160164:web:d23553d7ca499102c17c31",
+              measurementId: "G-1QXKDGBZKR"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+          
+    </body>
+
+</html>
