@@ -3,12 +3,13 @@ aspect-ratio: 16/9;
 max-width: 800px;
 margin: 0 auto;
 padding: 10px;
-
-text-align: center;
-
+text-align: center
 }
 
 .containervideos img{
     width: 100%;
 }
 
+.seccionvideos{
+    /*background-color:blue;*/
+}
