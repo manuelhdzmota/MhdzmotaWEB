@@ -647,3 +647,21 @@ text-align: center;
   background-color:#EB2D2A ;
   
 }
+
+.image-title {
+  position:absolute;
+  top: 50%;
+  transform: translateX(-250px);
+  background-color: rgba(255, 255, 255, 0.7); /* Color de fondo del título */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px; /* Cambia el tamaño de la fuente según sea necesario */
+  color: #333; /* Cambia el color del texto según sea necesario */
+  z-index: 1; /* Asegura que esté por encima de la imagen */
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Efecto de transición */
+}
+
+.carousel a:hover .image-title {
+  opacity: 1; /* Muestra el título al pasar el mouse sobre la imagen */
+}

@@ -1,0 +1,23 @@
+
+
+.row h6{
+    font-size: 80px;
+}
+
+.no-gutters{
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.no-gutters img{
+    width: 100%;
+
+}
+
+#desdibujarCover{
+    transform: translateX(50%);
+        width: 50%;
+        height: auto;
+
+}
