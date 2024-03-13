@@ -377,7 +377,15 @@ nav #menu {
   display: flex;
   justify-content: center;
   align-content: center;
-  color: #999;
+  text-align: center;
+  color: #aa0c00;
+
+}
+
+.visualarchive h3{
+  font-weight: 600;
+  font-size: 60px;
+
 }
 
 .logo{
@@ -400,6 +408,9 @@ nav #menu {
 .secciones{
   max-width: 100%;
   background-color: #aa0c00;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
   .secciones  div {
@@ -409,11 +420,13 @@ nav #menu {
     width: 33%;
     text-align: center;
     font-size: 40px;
+    
   }
 
   .secciones div a{
    color: white;
    text-decoration: underline;
+   
   }
 
   .secciones div a:hover{
@@ -429,6 +442,7 @@ nav #menu {
     list-style: none; /*le quita la viñeta a la lista*/
     font-size: 60px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   }
 
@@ -486,6 +500,21 @@ nav #menu {
 
  
 /*                    Scroll Down animation               */
+
+.instructions {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-360px);
+
+}
+
+.instructions li{
+  list-style: none;
+  text-align: center;
+}
 
 .scroll-down {
     position: absolute;
