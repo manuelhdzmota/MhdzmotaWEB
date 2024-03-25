@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("./images/cgi/RelojRender.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("./images/cgi/photovan.jpg");
     background-position: 50% 50%;
     background-size:70%;
     animation: fade-in 2s;
