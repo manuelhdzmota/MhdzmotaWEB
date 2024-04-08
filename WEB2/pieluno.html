@@ -49,19 +49,16 @@
 
                  <div  class="logo" onClick="location.href='index.html'">Manuel Hernández Mota</div>  
 
-                    <div class="nav-wrapper" id="wrapper">
-                        <ul>
-                             <li><a href="home.html" >Home</a></li>
-                             <li id="menuwork" ><a id="workk" href="#">Work</a>
-                                    <ul id="dropdown-products">
-                                          <li><a href="photography.html">Photography</a></li>
-                                          <li><a href="cgi.html">CGI</a></li>
-                                          <li><a href="films.html">Films</a></li>
-                                    </ul></li>
-                             <li id="aboutt"><a href="about.html">About me</a></li>
-                             <li><a href="contact.html" >Contact</a></li>
-                        </ul>
-                    </div> 
+                 <div class="nav-wrapper" id="wrapper">
+                  <ul>
+                       <li><a href="home.html" >OVERVIEW </a></li>
+                       <li><a href="photography.html">Photography </a></li>
+                       <li><a href="cgi.html">CGI </a></li>
+                       <li><a href="films.html">Films </a></li>
+                       <li><a href="about.html">About me</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </div> 
             </nav>
 
 
@@ -163,6 +160,10 @@
                 
             </div>
 
+            <div class="buton">
+                  <!-- Agregar el botón de ir arriba -->
+                  <button onclick="goToTop()" id="goToTopBtn">&uarr;</button>
+            </div>
 
             <div class="whitespace"></div>
             <div class="whitespace"></div>
@@ -292,7 +293,22 @@ TweenMax.staggerFrom("#menu li a", 1, {
 
 new WOW().init();
 
+function goToTop() {
+    const duration = 1000; // Duración del desplazamiento en milisegundos
+    const start = window.pageYOffset;
+    const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 
+    function scroll() {
+        const now = 'now' in window.performance ? performance.now() : new Date().getTime();
+        const time = Math.min(1, ((now - startTime) / duration));
+        const timeFunction = time * (2 - time);
+        window.scrollTo(0, Math.ceil((timeFunction * (0 - start)) + start));
+
+        if (window.pageYOffset === 0) return;
+        requestAnimationFrame(scroll);
+    }
+    scroll();
+}
 
 
 </script>

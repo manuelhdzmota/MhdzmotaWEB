@@ -44,13 +44,16 @@
 
                     <div class="nav-wrapper" id="wrapper">
                         <ul>
-                             <li><a href="home.html">Home</a></li>
-                             <li id="menuwork"><a href="#">Work</a>
+                             <li><a href="home.html" style="color: #aa0c00; text-decoration: underline;">OVERVIEW </a></li>
+                             <li><a href="photography.html">Photography </a></li>
+                             <li><a href="cgi.html">CGI </a></li>
+                             <li><a href="films.html">Films </a></li>
+                             <!--li id="menuwork"><a href="#">Work</a>
                                 <ul id="dropdown-products">
                                     <li><a href="photography.html">Photography</a></li>
                                     <li><a href="cgi.html">CGI</a></li>
                                     <li><a href="films.html">Films</a></li>
-                              </ul></li>
+                              </ul></li-->
                              <li><a href="about.html">About me</a></li>
                              <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -76,36 +79,22 @@
 
     <div class="instructions">
         <u>
-            <li><em>Scroll down to see general collection</em></li>
-            <li><em>or click a section to see featured projects</em></li>
+            <li><em>OVERVIEW</em></li>
         </u>
     </div>
 
         <div class="scroll-down"></div>
         
     <!--------------- Hero --------------->
-
-
-
-    <div class="secciones">
-        <div><a href="photography.html">PHOTOGRAPHY</a></div>
-        <div><a href="cgi.html">CGI</a></div>
-        <div><a href="films.html">FILMS</a></div>
-    </div>
     
-
-    <div class="visualarchive">
-    <h3>General collection</h3>
-    </div>
-    
-    <div class="whitespace"></div>
-
         
     <!--------------- Grid --------------->
     <div class="linea">
+
         <div class="column">
             <img src="./images/archive/chilidrag.jpg">
             <img src="./images/archive/sombras.jpg">
+            
             <img src="./images/archive/Rooftop-1920.jpg">
             <img src="./images/archive/charlize.jpg">
             <img src="./images/archive/asfixia.jpg">
@@ -114,15 +103,13 @@
             <img src="./images/archive/drea.jpg">
             <img src="./images/archive/nathaniel.jpg">
             <img src="./images/archive/male.jpg">
-            
-            
-
         </div>
+
         <div class="column">
             <img src="./images/archive/faro.jpg">
             <img src="./images/archive/pastizal.jpg">
-            
             <img src="./images/archive/efrain.jpg">
+            <img src="./images/cgi/RangeRover/1990.jpg">
             <img src="./images/archive/giulia.jpg">
             <img src="./images/archive/balsasola.jpg">
             <img src="./images/archive/tela.jpg">
@@ -130,25 +117,30 @@
             <img src="./images/archive/cocina.jpg">
             <img src="./images/archive/flor.jpg">  
             <img src="./images/archive/fire.jpg">         
-            
-
         </div>
+
         <div class="column">
             <img src="./images/archive/corazonarbol-2.jpg">
             <img src="./images/archive/amarillo-compressed.jpg">
+            <img src="./images/archive/PersonajeColores2.jpg">
             <img src="./images/archive/desnudomasc.jpg">
             <img src="./images/archive/googles.jpg">
-            <img src="./images/archive/PersonajeColores2.jpg">
+
             <img src="./images/archive/camino.jpg">
             <img src="./images/archive/verttigo.jpg">
             <img src="./images/archive/cactus.jpg">
-            
             <img src="./images/archive/jessy.jpg">
             <img src="./images/archive/balsa.jpg">
-            
-
         </div>
+
     </div>
+
+
+    <div class="buton">
+        <!-- Agregar el botón de ir arriba -->
+        <button onclick="goToTop()" id="goToTopBtn">&uarr;</button>
+      </div>
+
 
     <!--------------- Grid --------------->
 
@@ -208,7 +200,22 @@ TweenMax.staggerFrom("#menu li a", 1, {
 
 new WOW().init();
 
+function goToTop() {
+    const duration = 1000; // Duración del desplazamiento en milisegundos
+    const start = window.pageYOffset;
+    const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
 
+    function scroll() {
+        const now = 'now' in window.performance ? performance.now() : new Date().getTime();
+        const time = Math.min(1, ((now - startTime) / duration));
+        const timeFunction = time * (2 - time);
+        window.scrollTo(0, Math.ceil((timeFunction * (0 - start)) + start));
+
+        if (window.pageYOffset === 0) return;
+        requestAnimationFrame(scroll);
+    }
+    scroll();
+}
 
 
 </script>

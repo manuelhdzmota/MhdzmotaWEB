@@ -51,7 +51,7 @@
     justify-content: center;
     min-height: 80vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("./images/cgi/RelojRender.png");
-    background-position: 40% 50% !important;
+    background-position: 50% 50% !important;
     background-size:300% !important;
     animation: fade-in 2s;
     background-color:#aa0c00;

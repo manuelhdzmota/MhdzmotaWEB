@@ -20,3 +20,31 @@
         height: auto;
 
 }
+
+.buton {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  /* Estilos del botón */
+  #goToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: white; /* Color de fondo del botón */
+    color: #aa0c00; /* Color del texto del botón */
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #goToTopBtn:hover {
+    background-color: #aa0c00; /* Cambiar color de fondo al pasar el ratón */
+    color: white;
+  }
