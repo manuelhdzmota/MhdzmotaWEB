@@ -468,14 +468,12 @@ nav #menu {
         content: "Photography";
 
     }
-    25%{
-        content: "Filmmaking";
-    }
-    50%{
-        content: "3D Modeling & Rendering";
-    }
-    100%{
+    60%{
         content: "CGI";
+    }
+
+    100%{
+        content: "Filmmaking";
     }
   }
 

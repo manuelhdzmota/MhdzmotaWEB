@@ -25,13 +25,14 @@
     color: white;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background: rgba(0, 0, 0, 0.445);
   }
 
   .content{
     text-align: center;
-    
+    width: 100vw;
   }
 
   .content h1 {
@@ -96,3 +97,53 @@
   100% { opacity:1; }
 }
 
+.about {
+  display: flex;  
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  background: rgba(0, 0, 0, 0.445);
+
+}
+
+.about h1{
+  text-align: center;
+  width: 100vw;
+  color: white;
+}
+
+.about p {
+  text-align: center;
+  text-justify: inter-word;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-weight: 300;
+  line-height: 36px;
+  color: white;
+  transform: translateY(-200px);
+}
+
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.445);
+}
+
+.marco-circular {
+  width: 250px; /* ajusta el ancho según tus necesidades */
+  height: 250px; /* ajusta la altura según tus necesidades */
+  border-radius: 50%; /* esto hace que el borde sea circular */
+  overflow: hidden; /* esto oculta las partes de la imagen que están fuera del círculo */
+}
+
+.marco-circular img {
+  justify-content: center;
+  width: 100%; /* para asegurarse de que la imagen llene todo el círculo */
+  height: auto;
+  display: block;
+  transform: translateY(-70px);
+  scale: 110%;
+
+}

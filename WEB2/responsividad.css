@@ -24,6 +24,7 @@
     }
 
     .hero{
+      padding-top: 60% !important;
         border: 20px solid black;
         border-top: 60px solid black;
         width: 100%;
