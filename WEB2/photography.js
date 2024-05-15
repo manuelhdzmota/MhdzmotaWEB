@@ -14,7 +14,7 @@
 
     arrowIcons.forEach(icon => {
         icon.addEventListener("click", () => {
-            carousel.scrollLeft +=icon.id == "left" ? -firstImgWidth : firstImgWidth;
+            carousel.scrollLeft +=icon.id == "left" ? - firstImgWidth  : firstImgWidth;
             setTimeout(() => showHideIcons(), 60);
         });
     });
@@ -26,10 +26,6 @@
       let firstImgWidth = firstImg.clientWidth + 10;
       let valDifference = firstImgWidth - positionDiff;
 
-      if(carousel.scrollLeft > prevScrollLeft){
-           return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-      }
-      carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
     }
 
       const dragStart = (e) => {
@@ -50,12 +46,13 @@
       }
 
       const dragStop = () => {
-        isDragStart = false;
-        carousel.classList.remove("dragging");
-        if(!isDragging) return;
-        isDragging = false;
-        autoSlide();
-      }
+            isDragStart = false;
+            carousel.classList.remove("dragging");
+            if(!isDragging) return;
+            isDragging = false;
+            autoSlide();
+          }
+
 
       carousel.addEventListener("mousedown", dragStart);
       carousel.addEventListener("touchstart", dragStart);
